@@ -29,6 +29,11 @@ export default defineConfig({
       path: '/table',
       component: './Table',
     },
+    {
+      name: 'ProTable',
+      path: '/proTable',
+      component: './ProTable',
+    },
   ],
   npmClient: 'pnpm',
 });
