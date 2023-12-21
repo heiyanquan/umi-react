@@ -13,17 +13,35 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@ant-design/pro-components": "^2.6.43",
+    "@react-admin/pro-codemirror": "^0.0.2",
     "@umijs/max": "^4.0.88",
-    "antd": "^5.11.5"
+    "ahooks": "^3.7.8",
+    "antd": "^5.12.2",
+    "axios": "^1.6.2",
+    "classnames": "^2.3.2",
+    "code-example": "^3.3.7",
+    "dayjs": "^1.11.10",
+    "echarts": "^5.4.3",
+    "immer": "^10.0.3",
+    "js-md5": "^0.7.3",
+    "lodash": "^4.17.21",
+    "rc-virtual-list": "^3.11.3",
+    "react-monaco-editor": "^0.54.0",
+    "react-router-dom": "^6.19.0",
+    "use-immer": "^0.9.0",
+    "zustand": "^4.4.6"
   },
   "devDependencies": {
     "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.17",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.56.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0",
     "prettier": "^3.1.0",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-packagejson": "^2.4.6",
+    "rimraf": "^5.0.5",
     "typescript": "^5.3.2"
   }
 }

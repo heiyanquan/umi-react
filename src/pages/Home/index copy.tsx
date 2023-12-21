@@ -3,20 +3,21 @@ import { trim } from '@/utils/format';
 import { PageContainer } from '@ant-design/pro-components';
 import { useModel } from '@umijs/max';
 import styles from './index.less';
-import { SetStateAction, useEffect, useState } from 'react';
-import { HsAdminCodemirror } from '@react-admin/pro-codemirror'
+import { useEffect } from 'react';
 
 const HomePage: React.FC = () => {
   const { name } = useModel('global');
-  const [code, setCode] = useState('')
-
-  const codemirrorChange = (val: SetStateAction<string>, viewUpdate: any) => {
-    console.log('CodeMirror: onChange', val, viewUpdate)
-    setCode(val)
-  }
 
   useEffect(() => {
-    
+    const lang = 'php'
+    import(`code-example/txt/sample.${lang}.txt`).then((data) => {
+      console.log('Language PHP Code Example:', data.default);
+      fetch(data.default)
+        .then((res) => res.text())
+        .then((res) => {
+          console.log('[ res ] >', res);
+        });
+    });
   }, []);
 
   return (
@@ -24,7 +25,6 @@ const HomePage: React.FC = () => {
       <div className={styles.container}>
         <Guide name={trim(name)} />
       </div>
-      <HsAdminCodemirror value={code} setValue={setCode} height="300px" onChange={codemirrorChange} />
     </PageContainer>
   );
 };
