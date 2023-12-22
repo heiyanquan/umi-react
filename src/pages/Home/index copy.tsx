@@ -2,14 +2,14 @@ import Guide from '@/components/Guide';
 import { trim } from '@/utils/format';
 import { PageContainer } from '@ant-design/pro-components';
 import { useModel } from '@umijs/max';
-import styles from './index.less';
 import { useEffect } from 'react';
+import styles from './index.less';
 
 const HomePage: React.FC = () => {
   const { name } = useModel('global');
 
   useEffect(() => {
-    const lang = 'php'
+    const lang = 'php';
     import(`code-example/txt/sample.${lang}.txt`).then((data) => {
       console.log('Language PHP Code Example:', data.default);
       fetch(data.default)
