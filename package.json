@@ -2,18 +2,18 @@
   "private": true,
   "author": "heiyanquan <2792652898@qq.com>",
   "scripts": {
-    "dev": "max dev",
     "build": "max build",
+    "dev": "max dev",
     "format": "prettier --cache --write .",
-    "prepare": "husky install",
     "postinstall": "max setup",
+    "prepare": "husky install",
     "setup": "max setup",
     "start": "npm run dev"
   },
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@ant-design/pro-components": "^2.6.43",
-    "@react-admin/pro-codemirror": "^0.0.2",
+    "@react-admin/pro-codemirror": "^0.0.3",
     "@umijs/max": "^4.0.88",
     "ahooks": "^3.7.8",
     "antd": "^5.12.2",
